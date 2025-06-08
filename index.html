@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адаптивна типографіка</title>
+  <style>
+    :root {
+      --base-font-size: 18px;
+      --scale-ratio: 1.25;
+      --line-height: 1.6;
+      --max-width: 70ch;
+      --text-color: #333;
+      --background: #fafafa;
+    }
+
+    body {
+      font-family: 'Roboto', system-ui, sans-serif;
+      font-size: var(--base-font-size);
+      line-height: var(--line-height);
+      color: var(--text-color);
+      background: var(--background);
+      margin: 0;
+      padding: 1rem;
+      max-width: var(--max-width);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: calc(var(--base-font-size) * 2.5);
+      line-height: 1.2;
+      margin-top: 1rem;
+    }
+
+    h2 {
+      font-size: calc(var(--base-font-size) * 2);
+      margin-top: 1.5rem;
+    }
+
+    h3 {
+      font-size: calc(var(--base-font-size) * 1.5);
+      margin-top: 1.2rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    blockquote {
+      border-left: 4px solid #ccc;
+      padding-left: 1rem;
+      font-style: italic;
+      color: #555;
+      margin: 1rem 0;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    ul, ol {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 1.5rem;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 0.5rem;
+      text-align: left;
+    }
+
+    @media (max-width: 1200px) {
+      :root {
+        --base-font-size: 16px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      :root {
+        --base-font-size: 14px;
+      }
+
+      body {
+        padding: 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Космос: безмежний світ над нами</h1>
+
+  <p>Космос — це все, що нас оточує за межами атмосфери Землі. Це <strong>планети</strong>, <strong>зірки</strong>, <strong>галактики</strong>, а також темна матерія й енергія, про які ми майже нічого не знаємо.</p>
+
+  <h2>Цікаві факти про космос</h2>
+  <ul>
+    <li>У Всесвіті понад <strong>2 трильйони</strong> галактик.</li>
+    <li>Найгарячіша планета Сонячної системи — <em>Венера</em>, а не Меркурій.</li>
+    <li>Перший штучний супутник Землі — <em>Супутник-1</em>, запущений у 1957 році.</li>
+  </ul>
+
+  <blockquote>“Космос — це нагадування про те, наскільки маленькими ми є, і наскільки нескінченними є можливості.”</blockquote>
+
+  <h3>Основні об'єкти Всесвіту:</h3>
+  <ol>
+    <li>Зірки</li>
+    <li>Планети</li>
+    <li>Супутники</li>
+    <li>Астероїди та комети</li>
+  </ol>
+
+  <h2>Порівняння планет</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Планета</th>
+        <th>Діаметр (км)</th>
+        <th>Відстань до Сонця (млн км)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Земля</td>
+        <td>12 742</td>
+        <td>150</td>
+      </tr>
+      <tr>
+        <td>Марс</td>
+        <td>6 779</td>
+        <td>228</td>
+      </tr>
+      <tr>
+        <td>Юпітер</td>
+        <td>139 820</td>
+        <td>778</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
